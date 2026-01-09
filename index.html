@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botanic AI</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      darkMode: ['selector', '[data-theme="dark"]'],
+      theme: {
+        extend: {
+          colors: {
+            'brand-emerald': '#0F5247',
+            'brand-jade': '#A8DBA8',
+            'brand-amber': '#F4B41A',
+            'brand-off-white': '#F7F7F7',
+            'brand-charcoal': '#333333',
+          },
+          keyframes: {
+            'fade-in-up': {
+              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            }
+          },
+          animation: {
+            'fade-in-up': 'fade-in-up 0.6s ease-out forwards',
+          }
+        }
+      }
+    }
+    </script>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "marked": "https://esm.sh/marked@^17.0.1",
+    "@google/genai": "https://esm.sh/@google/genai"
+  }
+}
+</script>
+<style>
+  :root {
+    --bg-dark-url: url('https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=2670&auto-format&fit=crop');
+    /* Updated to a vibrant leafy texture for light mode */
+    --bg-light-url: url('https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?q=80&w=2574&auto-format&fit=crop');
+  }
+
+  body {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    transition: background-image 0.5s ease-in-out;
+    
+    /* Default to dark theme styles */
+    background-color: #0F5247; /* brand-emerald */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), var(--bg-dark-url);
+    --color-strong: #A8DBA8; /* brand-jade for dark mode */
+  }
+  
+  html[data-theme="light"] body {
+    background-color: #F7F7F7; /* brand-off-white */
+    /* Reduced overlay to 0.2 (20%) so the leaves are clearly visible */
+    background-image: linear-gradient(rgba(247, 247, 247, 0.2), rgba(247, 247, 247, 0.2)), var(--bg-light-url);
+    --color-strong: #0F5247; /* brand-emerald for light mode */
+  }
+
+  /* Styles for rendered markdown content */
+  .analysis-content p {
+    margin-bottom: 0.75rem;
+  }
+  .analysis-content p:last-child {
+    margin-bottom: 0;
+  }
+  .analysis-content strong {
+    color: var(--color-strong);
+    font-weight: 600;
+  }
+</style>
+</head>
+<body class="min-h-screen text-brand-charcoal antialiased font-sans">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>

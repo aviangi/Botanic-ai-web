@@ -1,0 +1,7 @@
+{
+  "name": "test language Botanic AI advance",
+  "description": "A fast, mobile-first landing page that lets a user upload (or capture) a plant and soil photo and get instant plant and soil analytics.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
