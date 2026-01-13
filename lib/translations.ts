@@ -1,6 +1,6 @@
 export const translations = {
   en: {
-    headerTitle: "Botanic",
+    headerTitle: "Agriverse",
     mainTitle: "Instant Plant & Soil Analysis",
     mainDescription: "Use your camera or upload a photo to get an instant health check and care plan for your plant.",
     takeAPhoto: "Take a Photo",
@@ -11,7 +11,7 @@ export const translations = {
     clearSelection: "Clear Selection",
     errorTitle: "Error:",
     analysisResultsTitle: "Analysis Results",
-    footerText: "© {year} Botanic AI. All rights reserved.",
+    footerText: "© {year} Agriverse AI. All rights reserved.",
     selectImageError: "Please select an image to analyze.",
     analysisFailedError: "Failed to get analysis. Please try again. ({errorMessage})",
     outputLanguage: "Output Language",
@@ -20,7 +20,7 @@ export const translations = {
     bengali: "Bengali"
   },
   hi: {
-    headerTitle: "बोटैनिक",
+    headerTitle: "एग्रीवर्स",
     mainTitle: "तुरंत पौधे और मिट्टी का विश्लेषण",
     mainDescription: "अपने पौधे की तत्काल स्वास्थ्य जांच और देखभाल योजना प्राप्त करने के लिए अपने कैमरे का उपयोग करें या एक फोटो अपलोड करें।",
     takeAPhoto: "फोटो खींचें",
@@ -31,7 +31,7 @@ export const translations = {
     clearSelection: "चयन साफ़ करें",
     errorTitle: "त्रुटि:",
     analysisResultsTitle: "विश्लेषण के परिणाम",
-    footerText: "© {year} बोटैनिक एआई। सर्वाधिकार सुरक्षित।",
+    footerText: "© {year} एग्रीवर्स एआई। सर्वाधिकार सुरक्षित।",
     selectImageError: "कृपया विश्लेषण के लिए एक छवि चुनें।",
     analysisFailedError: "विश्लेषण प्राप्त करने में विफल। कृपया पुन: प्रयास करें। ({errorMessage})",
     outputLanguage: "आउटपुट भाषा",
@@ -40,7 +40,7 @@ export const translations = {
     bengali: "बंगाली"
   },
   bn: {
-    headerTitle: "বোটানিক",
+    headerTitle: "এগ্রিভার্স",
     mainTitle: "তাৎক্ষণিক উদ্ভিদ ও মাটি বিশ্লেষণ",
     mainDescription: "আপনার উদ্ভিদের তাৎক্ষণিক স্বাস্থ্য পরীক্ষা এবং পরিচর্যা পরিকল্পনা পেতে আপনার ক্যামেরা ব্যবহার করুন বা একটি ছবি আপলোড করুন।",
     takeAPhoto: "ছবি তুলুন",
@@ -51,7 +51,7 @@ export const translations = {
     clearSelection: "নির্বাচন মুছুন",
     errorTitle: "ত্রুটি:",
     analysisResultsTitle: "বিশ্লেষণের ফলাফল",
-    footerText: "© {year} বোটানিক এআই। সর্বস্বত্ব সংরক্ষিত।",
+    footerText: "© {year} এগ্রিভার্স এআই। সর্বস্বত্ব সংরক্ষিত।",
     selectImageError: "অনুগ্রহ করে বিশ্লেষণের জন্য একটি ছবি নির্বাচন করুন।",
     analysisFailedError: "বিশ্লেষণ পেতে ব্যর্থ হয়েছে। অনুগ্রহ করে আবার চেষ্টা করুন। ({errorMessage})",
     outputLanguage: "আউটপুট ভাষা",
